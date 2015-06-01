@@ -57,7 +57,7 @@ INVISIBLE          CURSOR         "invis.cur"
 999                ICON           "gameIcon\\gameIcon.ico"
 
 
-ICON_1             ICON           "sludge.ico"
+ICON_1             ICON           "TSoTC.ico"
 
 
 
@@ -74,13 +74,13 @@ ICON_1             ICON           "sludge.ico"
     {
         BLOCK "040904e4"
         {
-            VALUE "CompanyName", "SLUDGE\0"
-            VALUE "Comments", "For more info on SLUDGE, head on over to http://www.adventuredevelopers.com/.\0"
-            VALUE "FileDescription", "Er... well, SLUDGE stands for Scripting Language for Unhindered Development of a Gaming Environment. So there. What, you thought this was a help file?\0"
-            VALUE "InternalName", "SLUDGE.EXE\0"
+            VALUE "CompanyName", "Tremendous Corporation\0"
+            VALUE "Comments", "http://tremendouscorp.com/\0"
+            VALUE "FileDescription", "Discover the legendary Secret(TM) and save the game industry.\0"
+            VALUE "InternalName", "TSOTC.EXE\0"
             VALUE "LegalCopyright", COPYRIGHT_TEXT
-            VALUE "OriginalFilename", "SLUDGE.EXE\0"
-            VALUE "ProductName", "SLUDGE Engine\0"
+            VALUE "OriginalFilename", "TSoTC.exe\0"
+            VALUE "ProductName", "The Secret of Tremendous Corporation\0"
          }
     }
     BLOCK "VarFileInfo"
