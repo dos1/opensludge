@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.55])
-AC_INIT([SLUDGE], [2.2.1], [tobias.han@gmx.de], [sludge], [http://opensludge.github.io/])
+AC_INIT([The Secret of Tremendous Corporation], [2.2.1.1], [tsotc@dosowisko.net], [tsotc], [http://tremendouscorp.com/])
 AC_CONFIG_SRCDIR([source/CommonCode/tga.cpp])
 AM_INIT_AUTOMAKE
 AC_CONFIG_HEADERS([config.h])
