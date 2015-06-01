@@ -24,7 +24,8 @@ extern char **languageName;
  */
 
 void printCmdlineUsage() {
-	fprintf(stdout, "OpenSLUDGE engine, usage: sludge-engine [<options>] <gamefile name>\n\n");
+	fprintf(stdout, "The Secret of Tremendous Corporation, based on OpenSLUDGE engine.\n");
+	fprintf(stdout, "Usage: tsotc [<options>] [<gamefile name>]\n\n");
 	fprintf(stdout, "Options:\n");
 	fprintf(stdout, "-f,		--fullscreen		Set display mode to fullscreen\n");
 	fprintf(stdout, "-w,		--window		Set display mode to windowed\n");
@@ -103,7 +104,6 @@ bool parseCmdlineParameters(int argc, char *argv[]) {
 			cmdlineSettings.debugMode = atoi(optarg);
 			break;
 		case 'h':
-		default:
 			retval = false;
 			break;
 		}

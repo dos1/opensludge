@@ -289,7 +289,7 @@ int main(int argc, char *argv[]) try
     winWidth = 640;
     winHeight = 480;
 
-	char * sludgeFile;
+	char * sludgeFile = NULL;
 
 	time_t t;
 	srand((unsigned) time(&t));
@@ -311,7 +311,9 @@ int main(int argc, char *argv[]) try
 
 	if (argc > 1) {
 		sludgeFile = argv[argc - 1];
-	} else {
+	}
+
+	if ( (! sludgeFile) || (! ( fileExists (sludgeFile) ) ) ) {
 		sludgeFile = joinStrings (bundleFolder, "gamedata.slg");
 		if (! ( fileExists (sludgeFile) ) ) {
 			delete sludgeFile;
@@ -321,6 +323,18 @@ int main(int argc, char *argv[]) try
 			}
 		}
 	}
+
+	if ( (! sludgeFile) || (! ( fileExists (sludgeFile) ) ) ) {
+		sludgeFile = strdup("gamedata.slg");
+		if (! ( fileExists (sludgeFile) ) ) {
+			delete sludgeFile;
+			sludgeFile = strdup("gamedata");
+			if (! ( fileExists (sludgeFile) ) ) {
+				sludgeFile = grabFileName ();
+			}
+		}
+	}
+
 
 #if defined __unix__ && !(defined __APPLE__)
 	if (! parseCmdlineParameters(argc, argv) ) {
