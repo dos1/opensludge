@@ -270,9 +270,10 @@ void checkInput() {
 					// The request is from elsewhere - ask for confirmation.
 					setGraphicsWindow(false);
 					//fprintf (stderr, "%s %s\n", gameName, getNumberedString(2));
-					if (msgBoxQuestion (gameName, getNumberedString(2))) {
-						weAreDoneSoQuit = 1;
-					}
+					//if (msgBoxQuestion (gameName, getNumberedString(2))) {
+					//	weAreDoneSoQuit = 1;
+					//}
+					input.keyPressed = 27; // let the game script handle it
 				}
 				break;
 				
