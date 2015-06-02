@@ -1,6 +1,6 @@
-bin_PROGRAMS = sludge-engine
+bin_PROGRAMS = tsotc
 
-sludge_engine_SOURCES = \
+tsotc_SOURCES = \
 	backdrop.cpp bg_effects.cpp builtin.cpp cursors.cpp debug.cpp \
 	fileset.cpp floor.cpp fonttext.cpp freeze.cpp graphics.cpp helpers.cpp \
 	language.cpp line.cpp linuxstuff.cpp loadsave.cpp main.cpp \
@@ -25,7 +25,7 @@ sludge_engine_SOURCES = \
 	libwebm/mkvreader.cpp libwebm/mkvreader.hpp 
 
 if COND_GLES2
-  sludge_engine_SOURCES += eglport/eglport.cpp eglport/eglport.h
+  tsotc_SOURCES += eglport/eglport.cpp eglport/eglport.h
 endif
 
 dist_pkgdata_DATA = \
