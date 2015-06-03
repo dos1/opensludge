@@ -300,6 +300,13 @@ int main(int argc, char *argv[]) try
 	// bundleFolder is set in applicationDidFinishLaunching.
 #elif defined __unix__
 	bundleFolder = copyString(DATADIR);	// DATADIR is defined in the Makefile.
+	if (! fileExists(bundleFolder)) {
+		char curDir[1000];
+		if (! getcwd (curDir, 998)) {
+			debugOut("Can't get current directory.\n");
+		}
+		bundleFolder = joinStrings(curDir, "/");
+	}
 #else
 	bundleFolder = copyString(argv[0]);
 	int lastSlash = -1;
