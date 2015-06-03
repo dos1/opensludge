@@ -13,6 +13,7 @@
 #include "stringy.h"
 #include "shaders.h"
 #include "graphics.h"
+#include "helpers.h"
 
 extern char *bundleFolder;
 
@@ -24,6 +25,9 @@ char *shaderFileRead(const char *name)
 	FILE *fp;
 	char *content = NULL;
 	char * fn = joinStrings (bundleFolder, name);
+	if (! fileExists(fn)) {
+		fn = joinStrings("./", name);
+	}
 
 	int count=0;
 
