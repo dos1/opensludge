@@ -1,0 +1,32 @@
+------------
+Running from binary
+------------
+
+Contents of this directory must be placed either in /usr/share/tsotc
+or in the same directory as the binary.
+
+------------
+Compiling from sources
+------------
+
+The Secret of Tremendous Corporation consists of two parts:
+
+- a modified SLUDGE engine
+- SLG game interpreted by the engine
+
+The game works also with upstream SLUDGE engine (although in versions
+2.2.1 and older there can be minor glitches), just missing a few
+customisations like "do you want to exit" screen on window close.
+
+Sources of the modified engine:
+https://github.com/dos1/opensludge/tree/tsotc-customisation
+
+Sources of the game itself:
+https://github.com/TheWalruzz/AdventureTheGame
+
+Only the engine part is changed in customised SLUDGE. All of the       
+devkit remains the same, so you can use official devkit to build
+the game into SLG file.
+
+Thanks and have fun!
+Tremendous Corporation

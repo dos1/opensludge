@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=The Secret of Tremendous Corporation
+Comment=Save the game industry!
+Exec=tsotc
+Icon=tsotc
+Terminal=false
+Type=Application
+Categories=Game;AdventureGame
