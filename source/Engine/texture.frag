@@ -17,6 +17,6 @@ void main(void)
 	{
 		col = col * color;
 	}
-	gl_FragColor = col;
+	gl_FragColor = col * vec4(0.998, 0.998, 0.998, 1);
 }
 
